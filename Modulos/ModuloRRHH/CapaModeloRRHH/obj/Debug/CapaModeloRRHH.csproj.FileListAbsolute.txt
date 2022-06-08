@@ -1,0 +1,6 @@
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\IS220221\Modulos\ModuloRRHH\CapaModeloRRHH\bin\Debug\CapaModeloRRHH.dll
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\IS220221\Modulos\ModuloRRHH\CapaModeloRRHH\bin\Debug\CapaModeloRRHH.pdb
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\IS220221\Modulos\ModuloRRHH\CapaModeloRRHH\obj\Debug\CapaModeloRRHH.csproj.AssemblyReference.cache
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\IS220221\Modulos\ModuloRRHH\CapaModeloRRHH\obj\Debug\CapaModeloRRHH.csproj.CoreCompileInputs.cache
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\IS220221\Modulos\ModuloRRHH\CapaModeloRRHH\obj\Debug\CapaModeloRRHH.dll
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\IS220221\Modulos\ModuloRRHH\CapaModeloRRHH\obj\Debug\CapaModeloRRHH.pdb
