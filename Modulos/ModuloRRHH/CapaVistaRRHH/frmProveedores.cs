@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace CapaVistaRRHH
 {
-    public partial class frmBancos : Form
+    public partial class frmProveedores : Form
     {
-        public frmBancos()
+        public frmProveedores()
         {
             InitializeComponent();
 
 			TextBox[] alias = navegador1.ClasificaTextboxsegunParent(this);
-			navegador1.ObtenerCamposdeTabla(alias, "banco", "hotelSanCarlos");
+			navegador1.ObtenerCamposdeTabla(alias, "proveedores", "hotelSanCarlos");
 			navegador1.MetodoSalirVista(this);
-			//navegador1.LlenarCombobox(cbxIDPuesto, "puesto", "pkIdPuesto", "nombre", "estado");
-			//navegador1.LlenarCombobox(cbxIDEmpresa, "empresa", "idEmpresa", "nombre", "estatus");
+			navegador1.LlenarCombobox(cbxEmpresas, "empresa", "idEmpresa", "nombre", "estatus");
 
 			//inicio de elementos para dar de baja
 			navegador1.campoEstado = "estado";
@@ -44,19 +43,17 @@ namespace CapaVistaRRHH
 			navegador1.ObtenerNombreDGV(this.dgvVistaPrevia);
 			navegador1.LlenarTabla();
 			navegador1.ObtenerReferenciaFormActual(this);
-			//String cadena = txtprueba.Text;
-			//navegador1.pruebaMensaje(cadena);
 
-		}
-
-        private void rbnEstatusimodulo_CheckedChanged(object sender, EventArgs e)
-        {
-			navegador1.CambioEstadoTextbox(txtEstado, rbnEstatusimodulo, "0");
 		}
 
         private void rbnEstatusamodulo_CheckedChanged(object sender, EventArgs e)
         {
 			navegador1.CambioEstadoTextbox(txtEstado, rbnEstatusamodulo, "1");
+		}
+
+        private void rbnEstatusimodulo_CheckedChanged(object sender, EventArgs e)
+        {
+			navegador1.CambioEstadoTextbox(txtEstado, rbnEstatusimodulo, "0");
 		}
 
         private void txtEstado_TextChanged(object sender, EventArgs e)
@@ -69,9 +66,14 @@ namespace CapaVistaRRHH
 			navegador1.SelecciondeFilaDGV(dgvVistaPrevia);
 		}
 
-        private void navegador1_Load(object sender, EventArgs e)
+        private void cbxEmpresas_SelectedIndexChanged(object sender, EventArgs e)
         {
+			navegador1.EnviarDatoComboaTextbox(cbxEmpresas, txtIdEmpresa);
+		}
 
-        }
+        private void txtIdEmpresa_TextChanged(object sender, EventArgs e)
+        {
+			navegador1.SeleccionarElementosenCombo(cbxEmpresas, txtIdEmpresa);
+		}
     }
 }

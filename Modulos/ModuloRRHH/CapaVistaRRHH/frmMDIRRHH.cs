@@ -333,6 +333,85 @@ namespace CapaVistaRRHH
             }
             catch (Exception ex) { MessageBox.Show("Error: " + ex); }
         }
+
+        private void bodegasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                frmMantenimientosBodegas form = new frmMantenimientosBodegas();
+                form.MdiParent = this;
+                bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
+                form.Show();
+            }
+            catch (Exception ex) 
+            { 
+                MessageBox.Show("Error: " + ex); 
+            }
+
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                frmProveedores form = new frmProveedores();
+                form.MdiParent = this;
+                bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
+                form.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+            }
+
+        }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmProductos form = new frmProductos();
+                form.MdiParent = this;
+                bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
+                form.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+            }
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmClientes form = new frmClientes();
+                form.MdiParent = this;
+                bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
+                form.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+            }
+        }
+
+        private void tiposDeMovimientosDeInventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmTipoMovInventario form = new frmTipoMovInventario();
+                form.MdiParent = this;
+                bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
+                form.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+            }
+        }
     }
 }
     

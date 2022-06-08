@@ -280,6 +280,7 @@ namespace CapaVistaRRHH
             this.txtCeldas.TabIndex = 134;
             this.txtCeldas.Tag = "vacaciones_e";
             this.txtCeldas.Visible = false;
+            this.txtCeldas.TextChanged += new System.EventHandler(this.txtCeldas_TextChanged);
             // 
             // navegador1
             // 
@@ -287,7 +288,7 @@ namespace CapaVistaRRHH
             this.navegador1.Location = new System.Drawing.Point(-210, -54);
             this.navegador1.Margin = new System.Windows.Forms.Padding(4);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1189, 38);
+            this.navegador1.Size = new System.Drawing.Size(1189, 34);
             this.navegador1.TabIndex = 135;
             // 
             // txtCeldasBorrar

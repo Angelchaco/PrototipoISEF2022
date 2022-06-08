@@ -174,3 +174,8 @@ C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISE
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\ModuloRRHH\CapaVistaRRHH\obj\Debug\CapaVistaRRHH.csproj.CopyComplete
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\ModuloRRHH\CapaVistaRRHH\obj\Debug\CapaVistaRRHH.dll
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\ModuloRRHH\CapaVistaRRHH\obj\Debug\CapaVistaRRHH.pdb
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\ModuloRRHH\CapaVistaRRHH\obj\Debug\CapaVistaRRHH.frmMantenimientosBodegas.resources
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\ModuloRRHH\CapaVistaRRHH\obj\Debug\CapaVistaRRHH.frmProveedores.resources
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\ModuloRRHH\CapaVistaRRHH\obj\Debug\CapaVistaRRHH.frmProductos.resources
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\ModuloRRHH\CapaVistaRRHH\obj\Debug\CapaVistaRRHH.frmClientes.resources
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\ModuloRRHH\CapaVistaRRHH\obj\Debug\CapaVistaRRHH.frmTipoMovInventario.resources

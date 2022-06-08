@@ -68,6 +68,12 @@
     <Compile Include="frmCandidatos.Designer.cs">
       <DependentUpon>frmCandidatos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaLiquidacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,11 +98,35 @@
     <Compile Include="frmListaLiquidacion.Designer.cs">
       <DependentUpon>frmListaLiquidacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMantenimientosBodegas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientosBodegas.Designer.cs">
+      <DependentUpon>frmMantenimientosBodegas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPoliza.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPoliza.designer.cs">
       <DependentUpon>frmPoliza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductos.Designer.cs">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedores.Designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoMovInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoMovInventario.Designer.cs">
+      <DependentUpon>frmTipoMovInventario.cs</DependentUpon>
     </Compile>
     <Compile Include="frmVacaciones.cs">
       <SubType>Form</SubType>
@@ -340,6 +370,9 @@
     <EmbeddedResource Include="frmCandidatos.resx">
       <DependentUpon>frmCandidatos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConceptos.resx">
       <DependentUpon>frmConceptos.cs</DependentUpon>
     </EmbeddedResource>
@@ -385,6 +418,9 @@
     <EmbeddedResource Include="frmLoading.resx">
       <DependentUpon>frmLoading.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientosBodegas.resx">
+      <DependentUpon>frmMantenimientosBodegas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMDIRRHH.resx">
       <DependentUpon>frmMDIRRHH.cs</DependentUpon>
     </EmbeddedResource>
@@ -403,6 +439,12 @@
     <EmbeddedResource Include="frmPoliza.resx">
       <DependentUpon>frmPoliza.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmProductos.resx">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPuesto.resx">
       <DependentUpon>frmPuesto.cs</DependentUpon>
     </EmbeddedResource>
@@ -414,6 +456,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTipoFalta.resx">
       <DependentUpon>frmTipoFalta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoMovInventario.resx">
+      <DependentUpon>frmTipoMovInventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVacaciones.resx">
       <DependentUpon>frmVacaciones.cs</DependentUpon>

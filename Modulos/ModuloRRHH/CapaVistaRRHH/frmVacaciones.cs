@@ -211,5 +211,10 @@ namespace CapaVistaRRHH
         {
             navegador1.Obtenerayuda(navegador1.idAplicacion, navegador1.campoAyuda, navegador1.tablaAyuda);
         }
+
+        private void txtCeldas_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
