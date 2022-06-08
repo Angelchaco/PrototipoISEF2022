@@ -412,6 +412,36 @@ namespace CapaVistaRRHH
                 MessageBox.Show("Error: " + ex);
             }
         }
+
+        private void movimientoInventarioEncabezadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmMovimientoInventarioEncabezado form = new frmMovimientoInventarioEncabezado();
+                form.MdiParent = this;
+                bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
+                form.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+            }
+        }
+
+        private void movimientoInventarioDetallleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmMovimientoInventarioDetalle form = new frmMovimientoInventarioDetalle();
+                form.MdiParent = this;
+                bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
+                form.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+            }
+        }
     }
 }
     

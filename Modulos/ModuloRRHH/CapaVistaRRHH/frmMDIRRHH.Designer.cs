@@ -52,8 +52,11 @@ namespace CapaVistaRRHH
             this.bodegasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tiposDeMovimientosDeInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiposDeMovimientosDeInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transaccionesInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movimientoInventarioEncabezadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movimientoInventarioDetallleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignaciónDeEmpleadosAConceptosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generaciónDeNóminaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,6 +83,7 @@ namespace CapaVistaRRHH
             this.archivoToolStripMenuItem,
             this.catálogosToolStripMenuItem,
             this.mantenimientosInventarioToolStripMenuItem,
+            this.transaccionesInventarioToolStripMenuItem,
             this.procesosToolStripMenuItem,
             this.reportesToolStripMenuItem,
             this.ayudasToolStripMenuItem});
@@ -257,6 +261,13 @@ namespace CapaVistaRRHH
             this.productosToolStripMenuItem.Text = "Productos";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
             // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(263, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            // 
             // tiposDeMovimientosDeInventarioToolStripMenuItem
             // 
             this.tiposDeMovimientosDeInventarioToolStripMenuItem.Name = "tiposDeMovimientosDeInventarioToolStripMenuItem";
@@ -264,12 +275,28 @@ namespace CapaVistaRRHH
             this.tiposDeMovimientosDeInventarioToolStripMenuItem.Text = "Tipos de movimientos de inventario";
             this.tiposDeMovimientosDeInventarioToolStripMenuItem.Click += new System.EventHandler(this.tiposDeMovimientosDeInventarioToolStripMenuItem_Click);
             // 
-            // clientesToolStripMenuItem
+            // transaccionesInventarioToolStripMenuItem
             // 
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(263, 22);
-            this.clientesToolStripMenuItem.Text = "Clientes";
-            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            this.transaccionesInventarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.movimientoInventarioEncabezadoToolStripMenuItem,
+            this.movimientoInventarioDetallleToolStripMenuItem});
+            this.transaccionesInventarioToolStripMenuItem.Name = "transaccionesInventarioToolStripMenuItem";
+            this.transaccionesInventarioToolStripMenuItem.Size = new System.Drawing.Size(148, 20);
+            this.transaccionesInventarioToolStripMenuItem.Text = "Transacciones Inventario";
+            // 
+            // movimientoInventarioEncabezadoToolStripMenuItem
+            // 
+            this.movimientoInventarioEncabezadoToolStripMenuItem.Name = "movimientoInventarioEncabezadoToolStripMenuItem";
+            this.movimientoInventarioEncabezadoToolStripMenuItem.Size = new System.Drawing.Size(261, 22);
+            this.movimientoInventarioEncabezadoToolStripMenuItem.Text = "Movimiento Inventario Encabezado";
+            this.movimientoInventarioEncabezadoToolStripMenuItem.Click += new System.EventHandler(this.movimientoInventarioEncabezadoToolStripMenuItem_Click);
+            // 
+            // movimientoInventarioDetallleToolStripMenuItem
+            // 
+            this.movimientoInventarioDetallleToolStripMenuItem.Name = "movimientoInventarioDetallleToolStripMenuItem";
+            this.movimientoInventarioDetallleToolStripMenuItem.Size = new System.Drawing.Size(261, 22);
+            this.movimientoInventarioDetallleToolStripMenuItem.Text = "Movimiento Inventario Detalle";
+            this.movimientoInventarioDetallleToolStripMenuItem.Click += new System.EventHandler(this.movimientoInventarioDetallleToolStripMenuItem_Click);
             // 
             // procesosToolStripMenuItem
             // 
@@ -462,5 +489,8 @@ namespace CapaVistaRRHH
         private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bodegasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem transaccionesInventarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem movimientoInventarioEncabezadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem movimientoInventarioDetallleToolStripMenuItem;
     }
 }

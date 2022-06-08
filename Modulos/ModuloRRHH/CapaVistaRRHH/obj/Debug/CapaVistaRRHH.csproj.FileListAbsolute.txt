@@ -179,3 +179,5 @@ C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISE
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\ModuloRRHH\CapaVistaRRHH\obj\Debug\CapaVistaRRHH.frmProductos.resources
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\ModuloRRHH\CapaVistaRRHH\obj\Debug\CapaVistaRRHH.frmClientes.resources
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\ModuloRRHH\CapaVistaRRHH\obj\Debug\CapaVistaRRHH.frmTipoMovInventario.resources
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\ModuloRRHH\CapaVistaRRHH\obj\Debug\CapaVistaRRHH.frmMovimientoInventarioEncabezado.resources
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\ModuloRRHH\CapaVistaRRHH\obj\Debug\CapaVistaRRHH.frmMovimientoInventarioDetalle.resources

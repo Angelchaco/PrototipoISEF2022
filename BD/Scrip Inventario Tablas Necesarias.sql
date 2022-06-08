@@ -124,7 +124,7 @@ CREATE TABLE IF NOT EXISTS `hotelsancarlos`.`movimientomotivo` (
 )ENGINE = InnoDB DEFAULT CHARACTER SET = latin1;
 
 insert into movimientomotivo values ('1','Movimiento Prod','1');
-insert into movimientomotivo values ('2','Traslado Prod Bod','1');
+insert into movimientomotivo values ('2','Trasl Prod Bod','1');
 
 -- -----------------------------------------------------
 -- Tabla `hotelsancarlos`.`tipomovimientoinventario` *
@@ -146,6 +146,7 @@ insert into tipomovimientoinventario values ('1','1','2022/05/15','1');
 
 CREATE TABLE IF NOT EXISTS `hotelsancarlos`.`movinvetario_encabezado` (
   `Pkid` VARCHAR(15) NOT NULL,
+  `nombreMov` VARCHAR(80) NOT NULL,
   `FkidConcepto` VARCHAR(15) NOT NULL,
   `FkidTipoMovInv` VARCHAR(15) NOT NULL,
   `estado` VARCHAR(1) NOT NULL,
@@ -160,8 +161,11 @@ CREATE TABLE IF NOT EXISTS `hotelsancarlos`.`movinvetario_encabezado` (
 
 CREATE TABLE IF NOT EXISTS `hotelsancarlos`.`movinvetario_detalle` (
   `Pkid` VARCHAR(15) NOT NULL,
+  `FkidMovInvEnc` VARCHAR(15) NOT NULL,
   `FkidProducto` VARCHAR(15) NOT NULL,
   `Cantidad` INT NOT NULL,
+  `estado` VARCHAR(1) NOT NULL,
   PRIMARY KEY (`Pkid`),
-  FOREIGN KEY (`FkidProducto`) REFERENCES `hotelsancarlos`.`productos` (`pkid`)
+  FOREIGN KEY (`FkidProducto`) REFERENCES `hotelsancarlos`.`productos` (`pkid`),
+  FOREIGN KEY (`FkidMovInvEnc`) REFERENCES `hotelsancarlos`.`movinvetario_encabezado` (`Pkid`)
 )ENGINE = InnoDB DEFAULT CHARACTER SET = latin1;

@@ -1,7 +1,7 @@
 ﻿
 namespace CapaVistaRRHH
 {
-    partial class frmTipoMovInventario
+    partial class frmMovimientoInventarioEncabezado
     {
         /// <summary>
         /// Required designer variable.
@@ -30,20 +30,22 @@ namespace CapaVistaRRHH
         private void InitializeComponent()
         {
             this.navegador1 = new DLL.nav.navegador();
-            this.cbxMotivo = new System.Windows.Forms.ComboBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
+            this.txtTipoMovInv = new System.Windows.Forms.TextBox();
+            this.txtIdConcepto = new System.Windows.Forms.TextBox();
+            this.txtIdTipoMov = new System.Windows.Forms.TextBox();
+            this.cbxConcepto = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rbnEstatusamodulo = new System.Windows.Forms.RadioButton();
             this.rbnEstatusimodulo = new System.Windows.Forms.RadioButton();
             this.lblEstatus = new System.Windows.Forms.Label();
-            this.txtFechaMov = new System.Windows.Forms.TextBox();
-            this.txtIdMovMotivo = new System.Windows.Forms.TextBox();
-            this.txtIdTipoMov = new System.Windows.Forms.TextBox();
             this.dgvVistaPrevia = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtpFechaMov = new System.Windows.Forms.DateTimePicker();
+            this.cbxTipoMovInv = new System.Windows.Forms.ComboBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVistaPrevia)).BeginInit();
             this.SuspendLayout();
@@ -56,33 +58,61 @@ namespace CapaVistaRRHH
             this.navegador1.Size = new System.Drawing.Size(1189, 87);
             this.navegador1.TabIndex = 0;
             // 
-            // cbxMotivo
-            // 
-            this.cbxMotivo.FormattingEnabled = true;
-            this.cbxMotivo.Location = new System.Drawing.Point(143, 184);
-            this.cbxMotivo.Name = "cbxMotivo";
-            this.cbxMotivo.Size = new System.Drawing.Size(121, 21);
-            this.cbxMotivo.TabIndex = 150;
-            this.cbxMotivo.SelectedIndexChanged += new System.EventHandler(this.cbxMotivo_SelectedIndexChanged);
-            // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(349, 259);
+            this.txtEstado.Location = new System.Drawing.Point(349, 298);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(39, 20);
-            this.txtEstado.TabIndex = 148;
+            this.txtEstado.TabIndex = 160;
             this.txtEstado.Tag = "estado";
             this.txtEstado.Visible = false;
-            this.txtEstado.TextChanged += new System.EventHandler(this.txtEstado_TextChanged_1);
+            this.txtEstado.TextChanged += new System.EventHandler(this.txtEstado_TextChanged);
+            // 
+            // txtTipoMovInv
+            // 
+            this.txtTipoMovInv.Location = new System.Drawing.Point(349, 261);
+            this.txtTipoMovInv.Name = "txtTipoMovInv";
+            this.txtTipoMovInv.Size = new System.Drawing.Size(55, 20);
+            this.txtTipoMovInv.TabIndex = 158;
+            this.txtTipoMovInv.Tag = "FkidTipoMovInv";
+            this.txtTipoMovInv.Visible = false;
+            this.txtTipoMovInv.TextChanged += new System.EventHandler(this.txtTipoMovInv_TextChanged);
+            // 
+            // txtIdConcepto
+            // 
+            this.txtIdConcepto.Location = new System.Drawing.Point(349, 224);
+            this.txtIdConcepto.Name = "txtIdConcepto";
+            this.txtIdConcepto.Size = new System.Drawing.Size(55, 20);
+            this.txtIdConcepto.TabIndex = 157;
+            this.txtIdConcepto.Tag = "FkidConcepto";
+            this.txtIdConcepto.Visible = false;
+            this.txtIdConcepto.TextChanged += new System.EventHandler(this.txtIdConcepto_TextChanged);
+            // 
+            // txtIdTipoMov
+            // 
+            this.txtIdTipoMov.Location = new System.Drawing.Point(143, 146);
+            this.txtIdTipoMov.Name = "txtIdTipoMov";
+            this.txtIdTipoMov.Size = new System.Drawing.Size(93, 20);
+            this.txtIdTipoMov.TabIndex = 156;
+            this.txtIdTipoMov.Tag = "Pkid";
+            // 
+            // cbxConcepto
+            // 
+            this.cbxConcepto.FormattingEnabled = true;
+            this.cbxConcepto.Location = new System.Drawing.Point(143, 223);
+            this.cbxConcepto.Name = "cbxConcepto";
+            this.cbxConcepto.Size = new System.Drawing.Size(121, 21);
+            this.cbxConcepto.TabIndex = 162;
+            this.cbxConcepto.SelectedIndexChanged += new System.EventHandler(this.cbxConcepto_SelectedIndexChanged);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.rbnEstatusamodulo);
             this.panel1.Controls.Add(this.rbnEstatusimodulo);
-            this.panel1.Location = new System.Drawing.Point(143, 259);
+            this.panel1.Location = new System.Drawing.Point(143, 298);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 30);
-            this.panel1.TabIndex = 149;
+            this.panel1.TabIndex = 161;
             // 
             // rbnEstatusamodulo
             // 
@@ -94,7 +124,7 @@ namespace CapaVistaRRHH
             this.rbnEstatusamodulo.TabStop = true;
             this.rbnEstatusamodulo.Text = "Activo";
             this.rbnEstatusamodulo.UseVisualStyleBackColor = true;
-            this.rbnEstatusamodulo.CheckedChanged += new System.EventHandler(this.rbnEstatusamodulo_CheckedChanged_1);
+            this.rbnEstatusamodulo.CheckedChanged += new System.EventHandler(this.rbnEstatusamodulo_CheckedChanged);
             // 
             // rbnEstatusimodulo
             // 
@@ -106,101 +136,94 @@ namespace CapaVistaRRHH
             this.rbnEstatusimodulo.TabStop = true;
             this.rbnEstatusimodulo.Text = "Inactivo";
             this.rbnEstatusimodulo.UseVisualStyleBackColor = true;
-            this.rbnEstatusimodulo.CheckedChanged += new System.EventHandler(this.rbnEstatusimodulo_CheckedChanged_1);
+            this.rbnEstatusimodulo.CheckedChanged += new System.EventHandler(this.rbnEstatusimodulo_CheckedChanged);
             // 
             // lblEstatus
             // 
             this.lblEstatus.AutoSize = true;
-            this.lblEstatus.Location = new System.Drawing.Point(33, 262);
+            this.lblEstatus.Location = new System.Drawing.Point(33, 301);
             this.lblEstatus.Name = "lblEstatus";
             this.lblEstatus.Size = new System.Drawing.Size(43, 13);
-            this.lblEstatus.TabIndex = 147;
+            this.lblEstatus.TabIndex = 159;
             this.lblEstatus.Text = "Estado:";
-            // 
-            // txtFechaMov
-            // 
-            this.txtFechaMov.Location = new System.Drawing.Point(349, 222);
-            this.txtFechaMov.Name = "txtFechaMov";
-            this.txtFechaMov.Size = new System.Drawing.Size(55, 20);
-            this.txtFechaMov.TabIndex = 146;
-            this.txtFechaMov.Tag = "FechaMovimiento";
-            this.txtFechaMov.Visible = false;
-            this.txtFechaMov.TextChanged += new System.EventHandler(this.txtFechaMov_TextChanged);
-            // 
-            // txtIdMovMotivo
-            // 
-            this.txtIdMovMotivo.Location = new System.Drawing.Point(349, 185);
-            this.txtIdMovMotivo.Name = "txtIdMovMotivo";
-            this.txtIdMovMotivo.Size = new System.Drawing.Size(55, 20);
-            this.txtIdMovMotivo.TabIndex = 145;
-            this.txtIdMovMotivo.Tag = "Fkidmotivo";
-            this.txtIdMovMotivo.Visible = false;
-            this.txtIdMovMotivo.TextChanged += new System.EventHandler(this.txtIdMovMotivo_TextChanged);
-            // 
-            // txtIdTipoMov
-            // 
-            this.txtIdTipoMov.Location = new System.Drawing.Point(140, 140);
-            this.txtIdTipoMov.Name = "txtIdTipoMov";
-            this.txtIdTipoMov.Size = new System.Drawing.Size(93, 20);
-            this.txtIdTipoMov.TabIndex = 144;
-            this.txtIdTipoMov.Tag = "Pkid";
             // 
             // dgvVistaPrevia
             // 
             this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVistaPrevia.Location = new System.Drawing.Point(420, 117);
+            this.dgvVistaPrevia.Location = new System.Drawing.Point(423, 123);
             this.dgvVistaPrevia.Name = "dgvVistaPrevia";
-            this.dgvVistaPrevia.Size = new System.Drawing.Size(724, 193);
-            this.dgvVistaPrevia.TabIndex = 143;
-            this.dgvVistaPrevia.SelectionChanged += new System.EventHandler(this.dgvVistaPrevia_SelectionChanged_1);
+            this.dgvVistaPrevia.Size = new System.Drawing.Size(724, 205);
+            this.dgvVistaPrevia.TabIndex = 155;
+            this.dgvVistaPrevia.Scroll += new System.Windows.Forms.ScrollEventHandler(this.dgvVistaPrevia_Scroll);
+            this.dgvVistaPrevia.SelectionChanged += new System.EventHandler(this.dgvVistaPrevia_SelectionChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 225);
+            this.label3.Location = new System.Drawing.Point(33, 264);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 13);
-            this.label3.TabIndex = 142;
-            this.label3.Text = "Fecha Movimiento";
+            this.label3.Size = new System.Drawing.Size(102, 13);
+            this.label3.TabIndex = 154;
+            this.label3.Text = "Tipo Mov Inventario";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 191);
+            this.label2.Location = new System.Drawing.Point(33, 230);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
-            this.label2.TabIndex = 141;
-            this.label2.Text = "Motivo";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 153;
+            this.label2.Text = "Concepto";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 143);
+            this.label1.Location = new System.Drawing.Point(36, 149);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 140;
-            this.label1.Text = "Id Tipo Mov";
+            this.label1.Size = new System.Drawing.Size(103, 13);
+            this.label1.TabIndex = 152;
+            this.label1.Text = "Id Mov Encabezado";
             // 
-            // dtpFechaMov
+            // cbxTipoMovInv
             // 
-            this.dtpFechaMov.Location = new System.Drawing.Point(143, 224);
-            this.dtpFechaMov.Name = "dtpFechaMov";
-            this.dtpFechaMov.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaMov.TabIndex = 126;
-            this.dtpFechaMov.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.cbxTipoMovInv.FormattingEnabled = true;
+            this.cbxTipoMovInv.Location = new System.Drawing.Point(143, 256);
+            this.cbxTipoMovInv.Name = "cbxTipoMovInv";
+            this.cbxTipoMovInv.Size = new System.Drawing.Size(121, 21);
+            this.cbxTipoMovInv.TabIndex = 163;
+            this.cbxTipoMovInv.SelectedIndexChanged += new System.EventHandler(this.cbxTipoMovInv_SelectedIndexChanged);
             // 
-            // frmTipoMovInventario
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(143, 189);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(93, 20);
+            this.txtNombre.TabIndex = 165;
+            this.txtNombre.Tag = "nombreMov";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(36, 192);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 13);
+            this.label4.TabIndex = 164;
+            this.label4.Text = "Nombre Mov Enc";
+            // 
+            // frmMovimientoInventarioEncabezado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1181, 322);
+            this.ClientSize = new System.Drawing.Size(1180, 354);
             this.Controls.Add(this.txtEstado);
-            this.Controls.Add(this.txtFechaMov);
-            this.Controls.Add(this.txtIdMovMotivo);
+            this.Controls.Add(this.txtTipoMovInv);
+            this.Controls.Add(this.txtIdConcepto);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtIdTipoMov);
-            this.Controls.Add(this.cbxMotivo);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cbxTipoMovInv);
+            this.Controls.Add(this.cbxConcepto);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dtpFechaMov);
             this.Controls.Add(this.lblEstatus);
             this.Controls.Add(this.dgvVistaPrevia);
             this.Controls.Add(this.label3);
@@ -208,9 +231,9 @@ namespace CapaVistaRRHH
             this.Controls.Add(this.label1);
             this.Controls.Add(this.navegador1);
             this.MaximizeBox = false;
-            this.Name = "frmTipoMovInventario";
+            this.Name = "frmMovimientoInventarioEncabezado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmTipoMovInventario";
+            this.Text = "frmMovimientoInventarioEncabezado";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVistaPrevia)).EndInit();
@@ -222,19 +245,21 @@ namespace CapaVistaRRHH
         #endregion
 
         private DLL.nav.navegador navegador1;
-        private System.Windows.Forms.ComboBox cbxMotivo;
         private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtTipoMovInv;
+        private System.Windows.Forms.TextBox txtIdConcepto;
+        private System.Windows.Forms.TextBox txtIdTipoMov;
+        private System.Windows.Forms.ComboBox cbxConcepto;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton rbnEstatusamodulo;
         private System.Windows.Forms.RadioButton rbnEstatusimodulo;
         private System.Windows.Forms.Label lblEstatus;
-        private System.Windows.Forms.TextBox txtFechaMov;
-        private System.Windows.Forms.TextBox txtIdMovMotivo;
-        private System.Windows.Forms.TextBox txtIdTipoMov;
         private System.Windows.Forms.DataGridView dgvVistaPrevia;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dtpFechaMov;
+        private System.Windows.Forms.ComboBox cbxTipoMovInv;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label label4;
     }
 }

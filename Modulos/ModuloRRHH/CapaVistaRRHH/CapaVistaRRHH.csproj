@@ -104,6 +104,18 @@
     <Compile Include="frmMantenimientosBodegas.Designer.cs">
       <DependentUpon>frmMantenimientosBodegas.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMovimientoInventarioDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimientoInventarioDetalle.Designer.cs">
+      <DependentUpon>frmMovimientoInventarioDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimientoInventarioEncabezado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimientoInventarioEncabezado.Designer.cs">
+      <DependentUpon>frmMovimientoInventarioEncabezado.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPoliza.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -426,6 +438,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMoneda.resx">
       <DependentUpon>frmMoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimientoInventarioDetalle.resx">
+      <DependentUpon>frmMovimientoInventarioDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimientoInventarioEncabezado.resx">
+      <DependentUpon>frmMovimientoInventarioEncabezado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNomina.resx">
       <DependentUpon>frmNomina.cs</DependentUpon>

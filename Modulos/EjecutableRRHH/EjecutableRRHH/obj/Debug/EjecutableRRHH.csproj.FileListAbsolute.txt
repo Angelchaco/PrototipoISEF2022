@@ -109,10 +109,10 @@ C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISE
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\EjecutableRRHH\EjecutableRRHH\bin\Debug\CapaModeloNav.pdb
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\EjecutableRRHH\EjecutableRRHH\bin\Debug\CapaControlador.pdb
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\EjecutableRRHH\EjecutableRRHH\bin\Debug\CapaModelo.pdb
-C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\EjecutableRRHH\EjecutableRRHH\obj\Debug\EjecutableRRHH.csproj.AssemblyReference.cache
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\EjecutableRRHH\EjecutableRRHH\obj\Debug\EjecutableRRHH.Properties.Resources.resources
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\EjecutableRRHH\EjecutableRRHH\obj\Debug\EjecutableRRHH.csproj.GenerateResource.cache
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\EjecutableRRHH\EjecutableRRHH\obj\Debug\EjecutableRRHH.csproj.CoreCompileInputs.cache
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\EjecutableRRHH\EjecutableRRHH\obj\Debug\EjecutableRRHH.csproj.CopyComplete
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\EjecutableRRHH\EjecutableRRHH\obj\Debug\EjecutableRRHH.exe
 C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\EjecutableRRHH\EjecutableRRHH\obj\Debug\EjecutableRRHH.pdb
+C:\Users\achac\OneDrive\Escritorio\RRHH\Examen Final\Proyecto Final\PrototipoISEF2022\Modulos\EjecutableRRHH\EjecutableRRHH\obj\Debug\EjecutableRRHH.csproj.AssemblyReference.cache
